@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {                                                                            	
+	char  frase[500];
+		int t=0;
+		
+	printf("digite a seguinte frase;: \n");
+	gets(frase);
+
+     for(int idx =0; idx < 500; idx++){
+     	if(frase[idx] == "\0"){
+     		t=idx;
+     		
+     		break;
+		 }
+	 }
+     
+	
+	
+	printf("A frase digitada tem %d caractres",t);
+	gets(frases);
+
+	return 0;
+}
