@@ -3,11 +3,14 @@
 #include <stdlib.h>
 
 int main(){
+	
+	\\
+	
 	setlocale(LC_ALL,"portuguese_brazil");
-	char frase[600];
+	char frase[300];
 	int vogais=0;
 	
-	printf("Qual frase vc deseja: ");
+	printf("Qual frase vc deseja: \n");
 	gets(frase);
 	
 	for(int j=0; j < 300; j++){
@@ -18,8 +21,7 @@ int main(){
 			break;
 		}
 	}
-	printf("qual foi sua frase: ");
-	puts(frase);
+
 	printf("Existem alguma %d vogis na sua frase! \n", vogais);
 	
 	
