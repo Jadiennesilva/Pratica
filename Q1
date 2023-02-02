@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+int main(){
+	setlocale(LC_ALL,"portuguese_brazil");
+	char frase[600];
+	int vogais=0;
+	
+	printf("Qual frase vc deseja: ");
+	gets(frase);
+	
+	for(int j=0; j < 300; j++){
+		if((frase[i] == 'A') || (frase[j] == 'E') || (frase[j] == 'I') || (frase[j] == 'O') || (frase[j] == 'U')){
+			vogais++;
+		}
+		if(frase[i] == '\0'){
+			break;
+		}
+	}
+	printf("qual foi sua frase: ");
+	puts(frase);
+	printf("Existem alguma %d vogis na sua frase! \n", vogais);
+	
+	
+	return 0;
+}
