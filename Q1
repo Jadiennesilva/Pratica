@@ -11,10 +11,10 @@ int main(){
 	gets(frase);
 	
 	for(int j=0; j < 300; j++){
-		if((frase[i] == 'A') || (frase[j] == 'E') || (frase[j] == 'I') || (frase[j] == 'O') || (frase[j] == 'U')){
+		if((frase[j] == 'A') || (frase[j] == 'E') || (frase[j] == 'I') || (frase[j] == 'O') || (frase[j] == 'U')){
 			vogais++;
 		}
-		if(frase[i] == '\0'){
+		if(frase[j] == '\0'){
 			break;
 		}
 	}
